@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Cheat Sheet</title>
+	</head>
+	<body>
+		<!--Headings -->
+		<h1>Heading One</h1>
+		<h2>Heading Two</h2>
+		<h3>Heading Three</h3>
+		<h4>Heading Four</h4>
+		<h5>Heading Five</h5>
+		<h6>Heading Six</h6>
+
+		<!--Paragraphs-->
+		<p>
+			<em>Lorem ipsum</em> dolor sit amet, <strong>consectetur adipisicing elit, sed do eiusmod</strong>
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. <a href= " ">Duis aute irure dolor</a> in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
+		</p>
+
+
+		<!-- Lists
+		Divided into two types:- 
+		1.) Ordered Lists 
+		2.) Unordered Lists -->
+
+		<ul>
+			<li> List Item One </li>
+			<li> List Item Two </li>
+			<li> List Item Three </li>
+			<li> List Item Four </li>
+		</ul>
+
+		<ol>
+			<li> List Item One </li>
+			<li> List Item Two </li>
+			<li> List Item Three </li>
+			<li> List Item Four </li>			
+		</ol>
+
+
+		<!--Tables
+		thead == means table head
+		tr == means table row 
+		th == represents the column heading -->
+
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Age</th>
+				</tr>
+			</thead>
+
+		</tbody>
+				<tr>
+					<td>Jasmeet Singh</td>
+					<td>jasmeetsingh0918@gmail.com</td>
+					<td>21</td>
+				</tr>
+
+				<tr>
+					<td>Tamanpreet Singh</td>
+					<td>tamanpreetsingh13@gmail.com</td>
+					<td>21</td>
+				</tr>
+
+
+				<tr>
+					<td>Varun Mehra</td>
+					<td>varun.mehra94200@gmail.com</td>
+					<td>21</td>
+				</tr>				
+			</tbody>
+		</table>
+
+		<br>
+		<hr>
+		<br>
+
+		<form action="process.php" method="POST">
+
+			<div>
+				<label>First Name</label>
+				<input type="text" name="fistName">
+			</div>
+
+			<br>
+
+			<div>
+				<label>Last Name</label>
+				<input type="text" name="lastName">
+			</div>
+
+			<br>
+
+			<div>
+				<label>Email</label>
+				<input type="email" name="email">
+			</div>
+
+			<br>
+
+			<div>
+				<label>Message</label>
+				<textarea name = "message"></textarea>
+			</div>
+
+			<br>
+
+			<div>
+				<label>Gender</label>
+				<select name="Gender">
+					<option value="Male">Male</option>
+					<option value = "Female">Female</option>
+					<option value = "Others">Others</option>
+				</select>
+			</div>
+			
+
+			<br>
+
+			<div>
+				<label>Age</label>
+				<input type="number" name="age">
+			</div>
+
+			<br>
+
+			<div>
+				<label>Birthday</label>
+				<input type="date" name="Birthday">
+			</div>
+
+			<br>
+
+			<div>
+				<input type="submit" name = "Submit" value="Submit">
+			</div>
+		</form>
+		<!--Buttons-->
+
+
+		<button>Click Me</button>
+		<br>
+
+		<!--Images-->
+
+		<a href="images/sample.jpg">
+			<img src="images/sample.jpg" alt="My Sample Image" width="200">
+		</a>
+
+		<!--Quotations
+			Divided into 3 types:-
+			1.) Blockquote
+			2.) Abbr (Abbreviations)
+			3.) Cite-->
+
+		<blockquote cite="http: //traversymedia.com">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+
+		<p>The <abbr title="World Wide Web"> WWW</abbr> is awesome</p>
+
+		<p><cite>HTML CSS JAVASCRIPT</cite> are the key skills for front end web development</p>
+	</body>	
+</html>	
