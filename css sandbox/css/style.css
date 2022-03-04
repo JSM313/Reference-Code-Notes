@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align-last: center;
+  background-color: #238881;
+}
+
+#welcome {
+  margin: 20px;
+  padding: 15px;
+  background-color: #f3f3f3;
+  border: 2px solid black;
+}
+
+#welcome h3 {
+  text-align-last: center;
+  margin-bottom: 10px;
+}
+
+#about {
+  margin: 20px;
+  padding: 15px;
+  background-color: #f3f4f2;
+  border: 2px solid black;
+}
+
+#about h3 {
+  text-align-last: center;
+  margin-bottom: 10px;
+}
+
+#beverages {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#beverages a {
+  text-decoration: none;
+}
+
+#beverages:hover {
+  color: orange;
+}

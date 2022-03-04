@@ -1,0 +1,65 @@
+<!-- * In this section we will discuss about one of the most important section in html which is the Box Model in CSS, we will discuss about margins and padding in css which covers the basics of margins and padding  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        background: #f4f4f4;
+        border: 2px gray solid;
+        width: 500px;
+
+        /* Padding on all sides */
+        padding: 20px;
+
+        /* Margin on all sides */
+        margin: 20px;
+
+        /* Padding per side */
+        padding-top: 20px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+
+        margin: 10px 20px 10px 20px;
+      }
+
+      .box h3 {
+        /* padding-bottom: 10px; */
+        padding-bottom: 10px;
+      }
+
+      /* CSS RESET */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heading 1</h1>
+    <div class="box">
+      <h3>Box One</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci atque
+        officia rerum modi itaque. Dolor eligendi quos culpa eius rem veritatis
+        saepe odio doloremque nemo pariatur, dolore est. Consequuntur, libero.
+      </p>
+    </div>
+
+    <div class="box">
+      <h3>Box Two</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam beatae
+        quasi blanditiis iste rem id, laborum officia eius sint nesciunt quod
+        sapiente dolores quam eveniet quisquam. Voluptates tempora aliquam
+        impedit.
+      </p>
+    </div>
+  </body>
+</html>
