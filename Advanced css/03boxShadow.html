@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow</title>
+    <style>
+      .container {
+        display: flex;
+      }
+
+      .box {
+        padding: 1rem;
+        margin: 1rem;
+        background-color: coral;
+        color: #fff;
+
+        /* offset x | offset y | color */
+        box-shadow: 10px 10px teal;
+
+        /* offset x | offset y | Blur Radius | color */
+        box-shadow: 5px 5px 20px teal;
+
+        /* offset x | offset y | Blur Radius | spread Radius | color */
+        box-shadow: -5px -5px 20px 2px rgba(0, 0, 0, 0.6);
+
+        /* Inset | Offset x | Offset Y | color */
+        box-shadow: inset 3px 3px teal;
+
+        /* Multiple shadows */
+        box-shadow: 3px 3px teal, -3px -3px olivedrab;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+          vero placeat. Accusamus rem a exercitationem placeat unde ipsum
+          laborum cupiditate dicta adipisci odio!
+        </p>
+      </div>
+      <div class="box">
+        <h3>Heading</h3>
+        <p>
+          Minus voluptatibus quo cumque placeat qui culpa natus aspernatur unde
+          tenetur quibusdam harum nemo facilis in delectus pariatur et, incidunt
+          quae, quas assumenda?
+        </p>
+      </div>
+      <div class="box">
+        <h3>Heading</h3>
+        <p>
+          Optio recusandae provident est quod in labore cum nesciunt ad
+          doloremque corrupti quidem, possimus dolor vitae animi suscipit
+          veritatis maiores excepturi, quis hic?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables</title>
+    <style>
+      /* Root scope of the variable  */
+      /* Can be used in the entire style sheet */
+      :root {
+        --primary-color: #333;
+        --secondary-color: skyblue;
+        --light-color: #f4f4f4;
+        --max-width: 1100px;
+        --box-1-width: 1;
+        --box-2-width: 2;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        line-height: 1.4;
+        /* Defining the variables */
+        /* block scope */
+        /* --light-color: #f4f4f4; */
+        background: var(--light-color);
+      }
+
+      header {
+        background-color: var(--primary-color);
+        box-shadow: 5px 5px 20px cyan;
+        text-shadow: 1px 1px red;
+        border-bottom: 5px var(--secondary-color) solid;
+        color: var(--light-color);
+        text-align: center;
+      }
+
+      .container {
+        display: flex;
+        margin: auto;
+        max-width: var(--max-width);
+      }
+
+      .box {
+        background-color: var(--primary-color);
+        border-bottom: 5px var(--secondary-color) solid;
+        color: #fff;
+        padding: 1rem;
+        margin: 1rem;
+      }
+
+      .box-1 {
+        flex: var(--box-1-width);
+      }
+
+      .box-2 {
+        flex: var(--box-2-width);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CSS Variables</h1>
+    </header>
+
+    <div class="container">
+      <div class="box box-1">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, officia.
+          Id quaerat maxime quidem accusantium.
+        </p>
+      </div>
+      <div class="box box-2">
+        <h3>Heading</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          ullam, nobis praesentium alias perspiciatis culpa?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
