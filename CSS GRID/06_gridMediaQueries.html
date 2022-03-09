@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Media Queries</title>
+    <style>
+      .container {
+        display: grid;
+
+        grid-template-columns: repeat(4, auto);
+
+        gap: 1rem;
+
+      }
+
+      @media(max-width:768px){
+        .container{
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media(max-width:500px){
+        .container{
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa nemo
+          sint enim quam animi commodi iusto maiores molestias sit tenetur
+          cupiditate, corporis eum, quia veniam ex! Est officia nostrum
+          corporis.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Heading</h3>
+        <p>
+          Possimus, distinctio quisquam. Excepturi earum harum delectus quo
+          debitis quibusdam facilis sapiente hic? Atque id ex dolorem, deserunt
+          laudantium a quae nemo quia. Id distinctio esse, voluptatem maiores
+          ipsa error.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Heading</h3>
+        <p>
+          Dolore eligendi quos provident vel omnis minus reprehenderit laborum
+          dignissimos, et hic rerum officiis dolorem libero pariatur maxime
+          molestias aut perspiciatis perferendis blanditiis ea eius neque
+          quisquam consequatur. Sapiente, reprehenderit?
+        </p>
+      </div>
+      <div class="item">
+        <h3>Heading</h3>
+        <p>
+          Velit mollitia laudantium, quae earum voluptatibus labore totam,
+          asperiores quidem harum enim possimus molestias, eos reprehenderit
+          quas inventore sed! Ut impedit, unde praesentium distinctio ratione
+          perspiciatis veritatis cum ipsum fuga.
+        </p>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
