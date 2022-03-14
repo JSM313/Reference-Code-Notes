@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Event Listeners</title>
+
+    <style>
+      body,
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .grandparent {
+        width: 200px;
+        background-color: orange;
+        height: 200px;
+      }
+
+      .parent {
+        width: 130px;
+        background-color: blue;
+        height: 130px;
+      }
+
+      .child {
+        width: 60px;
+        height: 60px;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grandparent">
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
