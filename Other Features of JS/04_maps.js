@@ -3,7 +3,7 @@
 const map1 = new Map();
 
 // Set keys
-const key1 = "some string",
+const key1 = "some string", // setting the name of the keys.
   key2 = {},
   key3 = function () {};
 
