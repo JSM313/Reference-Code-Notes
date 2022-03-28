@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section {
+  padding: 8rem 0 7rem;
+  text-align: center;
+  background-color: rgba(191, 222, 250, 0.479);
+}
+
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+
+.showcase-img {
+  position: relative;
+  max-width: 80%;
+  margin: 3rem auto -12rem;
+}
+
+.section-a {
+  background-image: url("../images/section-bg.jpg");
+  background-size: cover;
+  color: #fff;
+  padding-bottom: 5rem;
+}
+
+.section-a .fa {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  color: #beebff;
+}
+
+.section-a h5 {
+  margin-bottom: 0.3rem;
+}
+
+.section-b {
+  background: rgb(7, 199, 252);
+  color: #333;
+}
+
+.section-c .section-description {
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 1000px) {
+  .showcase-heading {
+    font-size: 3rem;
+    padding-top: 11rem;
+  }
+}

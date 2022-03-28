@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Skeleton Cheat Sheet</title>
+    <style>
+      .columns,
+      .column {
+        background: #f4f4f4;
+        border: 1px grey solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Headings  -->
+      <!-- Skeleton automatically sets up the font and styling for the headings -->
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 2</h3>
+      <h4>Heading 2</h4>
+      <h5>Heading 2</h5>
+      <h6>Heading 6</h6>
+
+      <!-- FLOATING LEFT AND RIGHT
+    Note:- All utility classes in skeleton start with "u-" -->
+
+      <h2 class="u-pull-left">Left</h2>
+      <h2 class="u-pull-right">Right</h2>
+      <div class="u-cf"></div>
+      <!-- u-cf will clear the float to avoid messing up of the content -->
+
+      <!-- Buttons -->
+      <button>Button</button>
+      <input type="submit" value="submit" />
+      <input type="submit" value="submit" />
+      <a href="" class="button">link</a>
+
+      <br />
+
+      <!-- PRIMARY BUTTONS :- give them a class of button-primary-->
+      <button class="button-primary">Button</button>
+      <a href="" class="button button-primary">link</a>
+
+      <br />
+
+      <!-- TO give full width to any html tag -->
+      <button class="u-full-width button-primary">Full Width Button</button>
+
+      <!-- Lists -->
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <ul>
+          <li>Web Design</li>
+          <li>Programming</li>
+        </ul>
+        <li>Contact</li>
+      </ul>
+
+      <!-- To display a code block -->
+      <pre>
+      <code>
+        body{
+          color: #fff;
+          background: #000;
+        }
+      </code>
+    </pre>
+
+      <!-- TABLES -->
+      <table class="u-full-width">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>jdoe@gmail.com</td>
+            <td>Boston</td>
+          </tr>
+          <tr>
+            <td>Ellen Stevens</td>
+            <td>ellen@yahoo.com</td>
+            <td>New York</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- FORMS -->
+      <form>
+        <div>
+          <label>Name</label>
+          <input class="u-full-width" type="text" placeholder="Enter name" />
+        </div>
+        <div>
+          <label>Membership</label>
+          <select class="u-full-width">
+            <option value="1">Membership 1</option>
+            <option value="2">Membership 2</option>
+            <option value="3">Membership 3</option>
+          </select>
+        </div>
+        <div>
+          <label>Message</label>
+          <textarea class="u-full-width" placeholder="Enter message"></textarea>
+        </div>
+        <div>
+          <label class="">
+            <input type="checkbox" />
+            <span class="label-body">Subscribe to email</span>
+          </label>
+        </div>
+        <input class="button-primary" type="submit" value="Submit" />
+      </form>
+
+      <!-- GRID SYSTEM IN SKELETON -->
+      <div class="row">
+        <div class="eight columns">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, iure?
+          Laborum, ratione beatae? Voluptate, minus culpa explicabo commodi
+          similique corrupti accusantium ad ullam odio sunt eum repudiandae
+          veritatis aliquam dignissimos nesciunt tenetur ducimus! Suscipit ad ea
+          illo amet molestias adipisci?
+        </div>
+        <div class="four columns">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, iure?
+          Laborum, ratione beatae? Voluptate, minus culpa explicabo commodi
+          simili
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="six columns">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          dignissimos alias architecto et nesciunt libero. Provident veniam
+          minus blanditiis molestiae eaque iusto iste. Aliquid ducimus adipisci
+          reprehenderit, eum quidem repellat officiis sunt ullam debitis cum
+          optio fugiat rerum perferendis doloremque.
+        </div>
+        <div class="six columns">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sequi
+          optio a maiores odit dolor cum, omnis atque aut ex veritatis aperiam,
+          qui dolore? Itaque, ea nisi cum qui quam quaerat impedit sequi illo
+          odio dolores debitis dignissimos recusandae aut?
+        </div>
+      </div>
+
+      <br />
+
+      <!-- ALTERNATE WAY FOR GRID SYSTEM -->
+      <!-- USING FRACTIONAL VALUES INSTEAD OF WRITING WHOLE NUMBERS IN WORD FORM -->
+      <div class="row">
+        <div class="one-third column">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+          quasi.
+        </div>
+        <div class="two-thirds column">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+          quasi.
+        </div>
+      </div>
+
+      <br />
+
+      <div class="row">
+        <div class="one-half column">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, sint!
+        </div>
+        <div class="one-half column">
+          Accusamus porro voluptatum similique dignissimos quisquam id
+          necessitatibus repellat quibusdam!
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
