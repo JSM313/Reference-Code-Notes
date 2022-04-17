@@ -1,12 +1,13 @@
 {
   "name": "node-js-crash-course",
   "version": "1.0.0",
-  "description": "Node crash course",
+  "description": "node js crash course",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index",
+    "dev": "nodemon index"
   },
-  "author": "Jasmeet Singh",
+  "author": "jasmeet singh",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.15"

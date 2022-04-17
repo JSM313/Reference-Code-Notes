@@ -1,36 +1,80 @@
+const http = require("http");
 
-// // console.log('Hello from Node.js...'); //* to run file in node js simply put 'node index.js OR node index'
+const path = require("path");
 
-// const log = (arg) => console.log(arg);
+const fs = require("fs");
 
-// //* To get the person object in this file 
-// // const person = require('./person');
+/*
+const server = http.createServer((request, response) => {
+  if (request.url === "/api/users") {
+    const users = [
+      { name: "Bob Smith", age: 40 },
+      { name: "John Doe", age: 23 },
+    ];
+    response.writeHead(200, { "Content-type": "application/json" });
+    response.end(JSON.stringify(users));
+  }
+});
+*/
 
-// //* ES6 WAY
-// // import person from './person'; //! node is currently not supporting the ES6 module therefore we will need babel to compile it.
+const server = http.createServer((request, response) => {
+  //* Building file path...
+  let filePath = path.join(
+    __dirname,
+    "public",
+    request.url === "/" ? "index.html" : request.url
+  );
 
-// // console.log(person);
+  // Extension of the file...
+  let extname = path.extname(filePath);
 
+  // Initial Content type
+  let contentType = "text/html";
 
-// // Accessing the person from the 'Person' class.
-// const Person = require('./person');
+  // Check extension and set content type...
+  switch (extname) {
+    case ".js":
+      contentType: "text/javascript";
+      break;
+    case ".css":
+      contentType: "text/css";
+      break;
+    case ".json":
+      contentType: "application/json";
+      break;
+    case ".png":
+      contentType: "image/png";
+      break;
+    case ".jpg":
+      contentType: "image/jpg";
+      break;
+  }
 
-// // Creating the person object
-// const john = new Person('John Doe', 30);
+  // * Read File..
+  fs.readFile(filePath, (err, content) => {
+    if (err) {
+      if (err.code == "ENOENT") {
+        //Page not found...
+        fs.readFile(
+          path.join(__dirname, "public", "404.html"),
+          (err, content) => {
+            response.writeHead(200, { "Content-Type": contentType });
+            response.end(content, "utf8");
+          }
+        );
+      } else {
+        // Some server error...
+        response.writeHead(500);
+        response.end(`Server Error: ${err.code}`);
+      }
+    } else {
+      // * Success...
+      response.writeHead(200, { "Content-Type": "text/html" });
+      response.end(content, "utf8");
+    }
+  });
+});
 
+const PORT = process.env.PORT || 5000;
 
-// // Calling the greeting method in the person classes.
-// john.greeting();
-
-// /* Module wrapper function whenever we access a module it comes wrapped around with several components like, 
-// exports, require, module, __filename, __dirname. */
-
-// log(__dirname, __filename);
-
-const Logger = require('./logger');
-
-const logger = new Logger();
-
-logger.on('message', data => console.log('Called listener ', data));
-
-logger.log('Hello World');
+server.listen(PORT, () => console.log(`Server running on port ${PORT}`));

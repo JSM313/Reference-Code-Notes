@@ -1,28 +1,27 @@
-// const person = {
-//   name: 'John Doe',
-//   age: 30
+/*
+const person = {
+  name: "John Doe",
+  age: 23,
+};
+*/
+
+// class Person {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+
+//   greeting() {
+//     console.log(`My name is ${this.name} and I'm ${this.age}`);
+//   }
 // }
 
-// To use this person in other files.
-// module.exports = person;
+// module.exports = Person;
 
-//* ES 6 WAY
-// export default person;
+// const person = require("./person");
 
-class Person {
+// const person = require("./person"); // importing the person class.
 
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
+// const person1 = new Person("John Doe", 30);
 
-  greeting() {
-
-    console.log(`My name is ${this.name} and I'm ${this.age}`);
-
-  }
-}
-
-// Exporting the person class.
-module.exports = Person;
-
+// person1.greeting();

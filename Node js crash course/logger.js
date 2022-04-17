@@ -1,15 +1,13 @@
-const eventEmitter = require('events');
+const EventEmitter = require("events");
 
-const uuid = require('uuid'); // creates a certain format of id
+const uuid = require("uuid");
 
 console.log(uuid.v4());
 
-class Logger extends eventEmitter {
-
+class Logger extends EventEmitter {
   log(message) {
-
-    // Call event
-    this.emit('message', { id: uuid.v4(), message: message });
+    // Call Event
+    this.emit("message", { id: uuid.v4(), message: message });
   }
 }
 
