@@ -1,0 +1,55 @@
+body {
+  background: #333;
+}
+
+.box {
+  background: #fff;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  animation-name: myanimation;
+  animation-duration: 4s; /* duration of the animation */
+}
+
+@keyframes myanimation {
+  0% {
+    background-color: #fff;
+    left: 0px;
+    top: 0px;
+    border-radius: 0 0 0 0;
+    animation-iteration-count: 2;
+    /* animation-delay:  1s*/
+    /* animation-direction: reverse; */
+    animation-timing-function: linear;
+    /* fill mode will stay with the final shape and the parameters with that we have made at the end of the animation */
+    animation-fill-mode: forwards;
+  }
+
+  25% {
+    background-color: indigo;
+    left: 300px;
+    top: 0px;
+    border-radius: 50% 0 0 0;
+  }
+
+  50% {
+    background-color: yellow;
+    left: 300px;
+    top: 300px;
+    border-radius: 50% 50% 0 0;
+  }
+
+  75% {
+    background-color: blue;
+    left: 0px;
+    top: 300px;
+    border-radius: 50% 50% 50% 0;
+  }
+
+  100% {
+    background-color: #fff;
+    top: 0px;
+    left: 0px;
+    border-radius: 50% 50% 50% 50%;
+  }
+}
