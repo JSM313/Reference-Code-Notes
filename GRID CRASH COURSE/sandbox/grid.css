@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  background: #f5f5f5;
+}
+
+.container {
+  max-width: 960px;
+  margin: 100px auto;
+  padding: 10px;
+
+  /* Wherever we set the property to display: grid that item will become the grid container and its children will become the grid items */
+
+  display: grid;
+
+  /* This property will divide the grid into the no of columns, the no of columns which will be formed will depend upon the no of values that we will mention 
+  
+  In this scenario we mentioned 2 values therefore, the container will divide its grid items into 2 columns, 1 of width 100px and the other of 200px*/
+
+  /* grid-template-columns: 100px 200px; */
+
+  /* grid-template-columns: 10% 20% 70%; */
+
+  /* grid-template-columns: 1fr 1fr 1fr; */
+
+  /* If we want to put all the columns with the same fractional unit then we can also do this, */
+
+  /* grid-template-columns: repeat(3, 1fr); */
+
+  /* ! same as wrapping function in flexbox */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+  /* for spacing we can use */
+  gap: 10px;
+
+  /* We can also use column-gap and row-gap properties seperately */
+
+  /* * Moving on to rows and heights */
+  /* grid-auto-rows: 200px; */
+
+  /* *Minmax can be used for both rows and columns the first property is the minimum value which it will be stretched by default and the other is the maximum value */
+
+  /* grid-auto-rows: minmax(200px, auto); */
+
+  /* grid-template-rows: 200px 100px 200px; */
+
+  /* This stretches relative to that item which has the most content */
+  /* align-items: stretch; */
+
+  /* Works for the vertical axis */
+  /* align-items: end; */
+
+  /* *Works for the horizontal axis */
+  /* justify-content: center; */
+}
+
+.item {
+  background: steelblue;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  border: skyblue 1px solid;
+}
+
+/* To select a paticular grid item */
+
+/* .item:nth-of-type(2) {
+  height: 100px;
+  width: 100px;
+
+  align-self: center;
+  justify-self: center;
+} */
+
+/* nth of type is referring to the item no 1 */
+/* .item:nth-of-type(1) {
+  background-color: #000;
+  grid-column: 1 / 3;
+}
+
+.item:nth-of-type(3) {
+  background: #333;
+  grid-row: 2/ 4;
+} */
+
+/* Responsiveness */
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
